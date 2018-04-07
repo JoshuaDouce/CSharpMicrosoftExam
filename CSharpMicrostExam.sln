@@ -29,6 +29,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example1-12AttachingChildTa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example1-13UsingATaskFactory", "Example1-13UsingATaskFactory\Example1-13UsingATaskFactory.csproj", "{D65A4B70-8021-42A4-9C71-C4E24BBC5DBF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example1-14TaskWaitAll", "Example1-14TaskWaitAll\Example1-14TaskWaitAll.csproj", "{C0D648D1-D60F-425B-B669-0F934E4B9A9D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example1-15TaskWaitAny", "Example1-15TaskWaitAny\Example1-15TaskWaitAny.csproj", "{D65942A9-31E1-4D80-8FC9-39B38BDC9486}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +91,14 @@ Global
 		{D65A4B70-8021-42A4-9C71-C4E24BBC5DBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D65A4B70-8021-42A4-9C71-C4E24BBC5DBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D65A4B70-8021-42A4-9C71-C4E24BBC5DBF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0D648D1-D60F-425B-B669-0F934E4B9A9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0D648D1-D60F-425B-B669-0F934E4B9A9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0D648D1-D60F-425B-B669-0F934E4B9A9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0D648D1-D60F-425B-B669-0F934E4B9A9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D65942A9-31E1-4D80-8FC9-39B38BDC9486}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D65942A9-31E1-4D80-8FC9-39B38BDC9486}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D65942A9-31E1-4D80-8FC9-39B38BDC9486}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D65942A9-31E1-4D80-8FC9-39B38BDC9486}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
