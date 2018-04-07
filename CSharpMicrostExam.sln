@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example1-3ParameterizedThre
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example1-4StoppingAThread", "Example1-4StoppingAThread\Example1-4StoppingAThread.csproj", "{FDB06F21-8A24-427F-97DC-A10F64588FB0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example1-5ThreadStaticAttribute", "Example1-5ThreadStaticAttribute\Example1-5ThreadStaticAttribute.csproj", "{E3A8A99B-F6C8-47B4-B93E-06E55F23ACAD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{FDB06F21-8A24-427F-97DC-A10F64588FB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FDB06F21-8A24-427F-97DC-A10F64588FB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FDB06F21-8A24-427F-97DC-A10F64588FB0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3A8A99B-F6C8-47B4-B93E-06E55F23ACAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3A8A99B-F6C8-47B4-B93E-06E55F23ACAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3A8A99B-F6C8-47B4-B93E-06E55F23ACAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3A8A99B-F6C8-47B4-B93E-06E55F23ACAD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
