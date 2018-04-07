@@ -17,7 +17,7 @@ namespace Example1_10AddingATaskContinuation
                 return i.Result * 2;
             }); ;
 
-            Console.WriteLine(t.Result); //Displays 48
+            Console.WriteLine(t.Result); //Displays 84
         }
     }
 }

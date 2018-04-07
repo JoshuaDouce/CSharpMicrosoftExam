@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example1-9TaskReturningValu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example1-10AddingATaskContinuation", "Example1-10AddingATaskContinuation\Example1-10AddingATaskContinuation.csproj", "{508A3CFF-A4D4-49FE-A543-B921908D5D88}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example1-11DifferentContinuationTasks", "Example1-11DifferentContinuationTasks\Example1-11DifferentContinuationTasks.csproj", "{037FF51C-DF84-41F3-8BF9-9E73BFE0A01B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{508A3CFF-A4D4-49FE-A543-B921908D5D88}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{508A3CFF-A4D4-49FE-A543-B921908D5D88}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{508A3CFF-A4D4-49FE-A543-B921908D5D88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{037FF51C-DF84-41F3-8BF9-9E73BFE0A01B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{037FF51C-DF84-41F3-8BF9-9E73BFE0A01B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{037FF51C-DF84-41F3-8BF9-9E73BFE0A01B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{037FF51C-DF84-41F3-8BF9-9E73BFE0A01B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
