@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example1-14TaskWaitAll", "E
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example1-15TaskWaitAny", "Example1-15TaskWaitAny\Example1-15TaskWaitAny.csproj", "{D65942A9-31E1-4D80-8FC9-39B38BDC9486}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example1-16UsingParallelForAndForeach", "Example1-16UsingParallelForAndForeach\Example1-16UsingParallelForAndForeach.csproj", "{40BA9A12-1137-42DD-8A5E-967EB5D708B7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,6 +101,10 @@ Global
 		{D65942A9-31E1-4D80-8FC9-39B38BDC9486}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D65942A9-31E1-4D80-8FC9-39B38BDC9486}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D65942A9-31E1-4D80-8FC9-39B38BDC9486}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40BA9A12-1137-42DD-8A5E-967EB5D708B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40BA9A12-1137-42DD-8A5E-967EB5D708B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40BA9A12-1137-42DD-8A5E-967EB5D708B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40BA9A12-1137-42DD-8A5E-967EB5D708B7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
