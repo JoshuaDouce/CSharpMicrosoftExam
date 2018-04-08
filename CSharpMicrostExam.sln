@@ -43,6 +43,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example1-19ScalabilityVSRes
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example1-20UsingConfigureAwait", "Example1-20UsingConfigureAwait\Example1-20UsingConfigureAwait.csproj", "{0CC7C18F-E03F-4EEF-BF37-2F3961E950A9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example1-21ContinueOnThreadPoolNotUiThread", "Example1-21ContinueOnThreadPoolNotUiThread\Example1-21ContinueOnThreadPoolNotUiThread.csproj", "{9D79A5BC-0C5B-49D3-939C-065B351F26B9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -129,6 +131,10 @@ Global
 		{0CC7C18F-E03F-4EEF-BF37-2F3961E950A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0CC7C18F-E03F-4EEF-BF37-2F3961E950A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0CC7C18F-E03F-4EEF-BF37-2F3961E950A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D79A5BC-0C5B-49D3-939C-065B351F26B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D79A5BC-0C5B-49D3-939C-065B351F26B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D79A5BC-0C5B-49D3-939C-065B351F26B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D79A5BC-0C5B-49D3-939C-065B351F26B9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
