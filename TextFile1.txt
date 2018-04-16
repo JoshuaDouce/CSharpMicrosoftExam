@@ -1,0 +1,45 @@
+Objective 1.2 Overview
+
+Thought Experiment
+
+1.How can you orchestrate your code to avoid deadlocks?
+
+You can avoid deadlock by making sure that locjs are requested in the same order. That way the 
+first thread can finish its work, after which the seond thread can continue. -JD
+
+It's important to make sure that all locking follows the same order when locking multiple objects. As soon as
+you start locking dependent objects in different orders, you start getting dead locks - TB
+
+2.How can the Interlocked class help?
+
+The interlocked class can hekp make operations atomic ensuring that when using multithreaded applications
+increment/decrement or exhange values is done atomically. -JD
+
+The interlocked class can help you excute small, atomic operations without the need for locking. When you 
+use locking a lot for these kind of operations you can replace them with the interlocked statement. -TB
+
+Objective Summary
+
+-When accesing shared data in a multithreaded environment, you need to syncronize access to avoid errors or 
+corrupted data.
+
+-Use the lock statement on a private object to synchronize access to a piece of code.
+
+-You can use the interlocked class to execute simple atomic operations.
+
+-You can cancel tasks by using the CancellationTokenSource class with a cancellationToken.
+
+Objective Review
+
+1. You want to syncronize access by using a lock statement. On which member do you lock?
+
+D - object _lock = new Object();
+
+2. You need to implement a cancellation task for a long runnig task. Which object do you pass to the task?
+
+B - cancellationToken
+
+3. You are implementing a state machine in a multithreaded class. You need to check what the current state 
+is and change it to the new one each step. Which mehod do you use?
+
+B - Interlocked.CompareExchange(ref currrentState, ref newState, expectedState)
