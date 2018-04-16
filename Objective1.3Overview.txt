@@ -1,0 +1,56 @@
+Objective 1.3 Overview
+
+Thought Experiment
+
+1. What is the disadvantage of using goto? How can you avoid using the goto statement?
+
+The disadvantage of the goto statement is that it can make code hard to read if if it jumps to different sections of code. You can avoid this
+by refactoring your code.
+
+Using the goto statement makes your code much harder to read beacsue the flow jumps around. goto is mostly used in looping statements. You can
+replace these with while or do while statements. -TB
+
+2. What statement should you use to improve long if statements?
+
+You should replace these wiith switch statements. -JD
+
+3. What are the differences between for and foreach statement? When should you use which?
+
+The for loop uses an instation, conditional and loop to iterate over a collection and you can change the value in the loop.
+A for loop enumerates a collection anditerates over every element in the collection. The elements cannot be changed - JD
+
+The for statement iterates over a collection using an index and you can midify the collection while iterating. You need an index to retrieve each item.
+The foreach is syntatic sugar that gives you a variable that points to each iteration item.
+
+Objective Summary
+
+-Boolean expressions can use several operators; ==, !=, <, >, <=, >=, !., (&&)AND, (||)OR, (^)XOR
+
+-You can use the if else statement to execute code depending on a specific condition.
+
+-The siwtch statement can be used when matching a value against multiple options
+
+-The for loop can be used when iterating over a collection where you know the number of iterations in advance.
+
+-The while loop can be used to execute some code while a statement is true. 
+
+-Do while is used when the code should be executed at least once.
+
+-For each can be used to iterate over collections.
+
+-Jump statements can be used to transfer control to another line of the program.
+
+Objective Review
+
+1.You need to iterate over a collection in which you know thenumber of items. You need to remove certain items from the collectin. Which statement do you use?
+
+C- for.
+
+2. You have a lot of checks in your application for null values. If a value is not null, you want to call a method on it. You waint to simplify your code. Which technique do you use?
+
+D- Short circuiting and operator. Short circuiting enables you to see wether a value is null and call a member on it in one and statement.
+If the left value is null the right operand wont be executed.
+
+3. You are processing some data from over the network. You use a hasnext and read method to retrieve the data. You need to run some code on each item. What do you use?
+
+D- While. You can use(o.hasNext){var i = o.read();} to proces the items. When o.hasnext is false the while loop stops.
