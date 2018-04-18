@@ -121,6 +121,9 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Examples", "Examples", "{C9428ABE-B7FC-4A37-9C7B-877C667D163A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercises", "Exercises", "{D352FB18-CAE4-4904-956A-900C1C807063}"
+	ProjectSection(SolutionItems) = preProject
+		Objective1.4Overview.txt = Objective1.4Overview.txt
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example1-75UsingADelegate", "Example1-75UsingADelegate\Example1-75UsingADelegate.csproj", "{BA7E0376-C3DD-438C-A232-B226D92F213D}"
 EndProject

@@ -1,0 +1,51 @@
+Thought Experiment
+
+1.Should you use delegates or events in this system?
+
+You should use events in this system ti implement the publish subscribe design pattern. -JD
+
+Events are a nice layer on top of delegates that make them easier and safer to use. In this case you should use events to make sure that other
+users wont be able clear all subscriptions. It also makes sure they cant raise the event on their own. They can only listen to changes. -TB
+
+2.How would this help?
+
+This can help you because the form can subsribe to an event that changes the data and update the view in real time. -JD
+
+The advantage of using events is that you achieve lose coupling. Your forms dont have to know anything about eachother. The class that monitors
+data changes and raises teh event doesnt have to know how many forms are listening. 3rd party plugins can easily sbscribe to the events at runtime
+to be able to respond to changes qithough tightly coupling to the existing system. - TB
+
+Objective Summary
+
+-Delegates are a tyoe that defines a method signature and can contain a reference to a method. 
+
+-Delegates can be instantiated, passed around and invoked
+
+-Lambda expressions aka anoynomous methods, use the => operator and form a compat way of creating inline methods.
+
+-Events are a layer of syntatic sugar on top of delegates. Users off ecents can only remove and add methods to the
+invocation list
+
+-You can customize events by adding a custom event accessor and by directly using the underlying delegate type.
+
+Objective Review
+
+1. You have a private method in your class and you want to make invocation of the method possible by certain callers. What do you do?
+
+C- Use a method that returns a delegate to authorized callers. 
+
+Correct - The method cann see whether the caller is autorized and then return a delegate to the private method that can be invoked at will.
+
+2. You have declared an event on your class, you want outside users of your class to raise this event. What do you do?
+
+D- Use a custom event accessor -Incorrect
+
+Correct answer B- Add a public method to your class that raises the event. The public method can be called outside of your class. Internally
+it can raise an event
+
+3.You are using a multicast delegate with multiple subscribers. You mat to make sure taht all subscribers are notified even if an exception
+is thrown. What do you do?
+
+A. Manually raise the events by using GetInvocationList.
+
+Correct - You can hande each individual error and make sure that all subscribers are called
