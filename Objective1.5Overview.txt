@@ -1,0 +1,49 @@
+Though Experiment
+
+1.Explain the advantages of exceptions over error codes.
+
+Exceptions provide greater detail as to what went wrong with application making it easier for developers and end users to 
+identify what went wrong. Also, as exceptions are objective they have multiple properties that can be used to get more detailed
+information unlike error codes where you would need to know the meaing of the code to know what went wrong. -JD
+
+Exceptions are objects so they store extra data that cannot be done using an error code. The .NET framework also offers special support
+for dealing with exceptions. -TB
+
+2.When should you create a custom exception?
+
+You should create a custome exception when you want to handle a more specific situation and developers working on with the code all know of
+these exceptions. -JD
+
+You should create custom exceptions only if you expect developers to handle it or perform custom logging. If a developer wont be able to fix
+the specific error, it wont make any sense to create a more specific exception. -TB
+
+Objective Summary
+
+-In the .NET framework, you should use exceptions to report errors instead of error codes.
+
+-Exceptions are objects that contain data about the reason for the exception.
+
+-You can use try block with one or more catch blocks to handle different typesof exceptions.
+
+-You can use a finally block to specify code that should always run after an exception or not.
+
+-You can use throw keyword to raise an exception.
+
+-You can define your own custom exceptions when you are sure users of your code will handle it in a different way. Otherwise, 
+use .NET franework exceptions.
+
+Objective Review
+
+1-You are checking the arguments of your method for illegal null values. If you encounter a null value, which exception do you throw?
+
+D-ArgumentNullException.
+
+2-Your code cathes IOException when a file cannot be accessed. You want to give more information to the caller fo your code. What do you do?
+
+B- Throw a new exception with extra information that has the IOException as the inner exception.
+
+3-You are creating a custom exception called LogOnFailedException. Whic constructos should you at least add?
+
+A-LogOnFailed()
+A-LogOnFailed(string message)
+A-LogOnFailed(string message, Exception innerException)
