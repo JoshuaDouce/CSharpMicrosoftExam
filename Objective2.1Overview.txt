@@ -1,2 +1,47 @@
 Thought Experiment
 
+Which basic types are you going to use to build your webshop?
+
+A class/refrence type for a customer, product, order, review, orderline. -JD
+
+How can you make sure your types contain both behaviour and data?
+
+You can use classes that contain fields to store the data on ap articular object and methods to supply behaviour. -JD
+
+When designing systems, you should focus on behaviour then maeke sure that you have the data to support that behaviour. -TB
+
+How can you improve usability of your types?
+
+Make types generic where possible so they can be re-used. -JD
+
+By making sure you have the correct constructors, uses of types can easilysee which data is required. You can improve
+usability by using a base class where possible. -TB
+
+Objective Summary
+
+-Types in C# can be value or reference types.
+-Genric types use a type parameter to make code more flexible
+-Constructors, methods, properties, fields and indexers properties can be used to create a type.
+-Optional and named parameters can be used when creating and calling methods
+-Overloading methods enable a method to accept different parameters
+-Extension methods can be used to add new functionality from a base class in a derived class.
+-Overidding enables you to redefine functionality from a base class in a derived class.s
+
+Objective Review
+
+1- You are creating a new colletion type and you want to make sure the elements in it can be eaily accessed. What should
+you add to the type.
+
+B- Indexer Property. - An indexer property enables the user of the type to easily access a type that represents
+an array type collection.
+
+2- You are creating a generic class that should work inly with reference types. Which type constrain shold you add?
+
+A- where T: class - Contraining your generic type parameter to class allows the class to be used only with a reference
+type
+
+3- You pass a struct variabe into a method as an argument. The method changes the variable; however, when the method
+returns,the variable has not changed. What happened?
+
+C- Passing a value type makes a copy of the data. The original wasnt changed. - Passing a struct will make a 
+copy of the data. The copy can be changed; the original wont. 

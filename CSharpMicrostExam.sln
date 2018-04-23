@@ -165,6 +165,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercises", "Exercises", "{
 		Objective2.1Overview.txt = Objective2.1Overview.txt
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Objective2.2", "Objective2.2", "{D63A91A3-E097-4FDB-8E38-328FD77E9B8B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -454,6 +456,7 @@ Global
 		{89A3AD04-5A20-432C-8977-E9B032EF63C4} = {1FC4465C-2918-49A0-8BDB-12471C76C27C}
 		{4A458660-C97D-482F-8E7F-AFE5176A8BD7} = {89A3AD04-5A20-432C-8977-E9B032EF63C4}
 		{094F4FC2-CCFA-495C-871C-14C1734D4770} = {89A3AD04-5A20-432C-8977-E9B032EF63C4}
+		{D63A91A3-E097-4FDB-8E38-328FD77E9B8B} = {1FC4465C-2918-49A0-8BDB-12471C76C27C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BC0DFAE5-B7DE-4802-8BBE-799B7849416C}
