@@ -1,0 +1,48 @@
+Thought Experiment
+
+1.How can a generic collection improve performance?
+
+A generic collections doesnt need to box and unbox calculation parameters. -JD
+
+2.Is there anything you can do to avoid exceptions when converting between types?
+
+To avoud exceptions ou can replace try catch block with 'is' and 'as' keywords when checking conversion between types.
+And you can use a simple boolean check to see if the value is allowed. -JD
+
+3.How can you ensure your type is better converted to the basic CLR types?
+
+You can ensure your type is better converted by provifing a conversion helper class. You could also make sure to 
+implement implicirt conversion to the CLR types you want to support.
+
+Objective Summary
+
+-Boxing occurs when a value type is treated as a reference type.
+
+-When converting between types, you can have an implicit or an explicit conversion.
+
+-An explicit conversion is called casting and requires special syntax.
+
+-You can create your own implicit and explicit user-defined conversions.
+
+-The .NET framework offers several helper methods for vonverting types.
+
+-The dynamic keyword can be used to ease the static typing of C# and to improve interoperability with other languages
+
+Objective Review
+
+1. You are creating a custom Distance Class. You want to ease the conversion from your distance class to a double. What shoudl you add?
+
+B- An implicit cast operator. - Adding an implicit cast operator will enable users of your class to convert between Distance and double 
+without any extra work.
+
+2. You want to determine whether the value of an object reference is derived from a particular type. Which C# language feature can you use?
+
+A - an as operator. - The as operator will return null if the conversion failed. If it succeeds it will return the converted object. Null checking 
+allows you to check if the ocnversion was succesful.
+C - an is operator. - The is keyword will see whether a type is derived from another type.
+
+3. You are using an arrayList as a colection for a list of Points, which are a custom struct. You are experiencing performance porblems when working
+with a large amount of points. What do you have to do?
+
+A. Use a generic collection - Using a generic collection will eliminate the need to box and unbox values. This will improve performance, especially 
+when working with a large number of items.
