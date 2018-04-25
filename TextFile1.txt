@@ -1,0 +1,56 @@
+Thought Experiment
+
+1. Explain to your colleauges why making all members public isnt the solution?
+
+Because you should only have access to what you need making the all public would allow all personel
+to access everything. -JD
+
+Making each and every type public will remove all the benefits encapsulation offers. Encapsulating data means
+that the internal representation of an object is hidden from the outside world. This preventers user of your 
+type from setting an invalid or incosistent state, and also hides complexity. This makes your system more
+robust because you can change the implementation detailes while not changing the public intterface of your type. -TB 
+
+2.Give an example of how a property can help wth encapsulating data while improving usability.
+
+A property can improve usability because it creates a private backing field that can be accessed using get and set 
+methods. These methods can be customised to check data integrity before the value a user trying to enter is stored. 
+
+3. How can interfaces be used to improve design? 
+
+A interface acts as a contract and any class implementing that interface must provide implementations of those methods. 
+
+Because a type can implement multiple interfaces, you can use an interface to expose only a subset of the type
+members. By using explicit interface implemenetation, you can also hide certain members that should be visible 
+only under certain circumstances. This way you can enhance the public interface type by exposing fewer members
+at a giventime. 
+
+Objective Summary
+
+-Encapsulation is important in OOS. It hides internal details and improves usability of a type.
+-Data can be encapsulated with a property. 
+-Properties can have both get and set accessors that can run additional code. 
+-Tyoes and type elements can have access modifiers to restrict accessiblity. 
+-The acces modifiers are public, internal, protected, protected internal and private. 
+-Explicit interface implementation can be used to hide information or to implement interfaces with
+duplicate member signatures.
+
+Objective Review
+
+1. What access modifier should you use to make sure that a method in a class can only be accessed inside the 
+same assembly by derived types?
+
+D. Make the class internal and its members protected.
+-An internal class cannot be accessed outside of its assembly. The protected methods can be accessed only by its derived types.
+
+2.You need to expose some data from a class. The data can be read by other tyes but can be changed by derived types. 
+What should you use?
+
+B.	A public property with a protected set method.  
+-A public property can be read by all other types. Th eprotected set modifier restricts chnages to derived types.
+
+3. You have a class that implements two interfaces that both have a method with the same name. Interface 1A should be 
+the default implementation. Interface 1B should be used only in special situations. How do you implement those interfaces?
+
+A. Implement 1A implicitly and 1B explicitly  
+-Implementing 1A implicity will make this the default. When dealing with a reference ti the class, this method will be invoked. Implementing
+1B explicitly will invoke the implementation for 1B when dealing with a reference to the 1B interface.
