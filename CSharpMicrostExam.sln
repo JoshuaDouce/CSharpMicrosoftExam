@@ -179,6 +179,9 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Examples", "Examples", "{446AB0D0-B0E2-4F94-95AF-B530523129B1}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercises", "Exercises", "{5D6BC905-277D-4B70-B081-AEE613B5C69F}"
+	ProjectSection(SolutionItems) = preProject
+		Objetive2.2Overview = Objetive2.2Overview
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
