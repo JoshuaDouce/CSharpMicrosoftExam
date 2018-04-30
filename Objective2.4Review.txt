@@ -1,0 +1,78 @@
+Thought Experiment
+
+1.Why does the .NET framework offer some interfaces without any implementation? Wouldnt it be easier 
+if the .NET framework used abstract base classes. 
+
+The .NET framework offers intercaes without any implementations as these specify a contract that any 
+class implementing these interfaces must provide a implementation. This is because the implementation
+may vary on the type. And this allows for loose coupling as another type can expect an interface and does
+not need to knwo about the implementation -JD
+
+Because you can implement multiple interfaces but cn only inherit from one class. -TB
+
+2.Would you use iterface or class inheritance to create a search criteria? 
+
+I would use an interface because the search criteria can vary depending on the type and this will make 
+alterng teh criteria easier. -JD
+
+Implementing the search criteria ca be best done using class inheritance. By making an absract class that 
+accepts an input and the executes a specific filter over the items, you can reuse as much code as possible.
+The inherited criteria would need to specify only the filter expression and their exact parameters thorugh 
+the constructor. -TB
+
+3.Which of the following interfaces would you use?
+
+IComparable.
+
+IUnkown - Not usable, only for dealing with unmanaged code.
+IDisposable - Only used for dealing with unmanaged resources.
+IComparable - Useful when you want to order your criteria. 
+IEnumerable - Used to implement iterator pattern which could give a performance benefit.
+
+Objecive Summary
+
+-Inheritance is the process in which a class is derived from another class or from an interface.
+-An interface specifies the public elements that a type must implement.
+-A class can implement multiple interfaces.
+-A base class mark methods as virtual; a derived class can then override those methods to add or replace
+behaviour. 
+-A class can be marked as abstract so it can be instatiated and can function only as a base class.
+-A class can be marked as sealed so it can be inherited. 
+-The .NET framework offers default interfaces.
+
+Objective Review
+
+1. You want a hierachy of types because you have some implementation code you want to share between
+all types. You also have some method signatures you want to share. What should you use?
+
+C. An Abstract Class. - An abstract class enables you to share both implemented methods and method
+signatures taht a derived class needs to implement.
+
+2. You want to create a type that can be easily sorted. Which interface should you implement?
+
+B. I comparable. - Enables objects to be compared to each other. It returns an integer value that represents
+the relative position as smaller than o, o or larger than o.
+
+3. You want inherit from an existing class and add some behaviour a method. Which steps do you have to take?
+
+B. Marking the method in the base class as virtual enables it to be overriden by a derived class.
+D. Use the override keyword on the derived method - The override keyword enables you to override a method
+marked as virtual in the base class.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
