@@ -197,6 +197,9 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Examples", "Examples", "{F00CBACE-5D8F-436F-A897-9EDFFC921505}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercises", "Exercises", "{6A00FE7B-73AB-4A3C-9F87-F5037BD56445}"
+	ProjectSection(SolutionItems) = preProject
+		Objective2.5Review = Objective2.5Review
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example2-58ApplyAttribute", "Example2-58ApplyAttribute\Example2-58ApplyAttribute.csproj", "{142185D9-E57C-4E30-9551-CD023FDA3A4E}"
 EndProject

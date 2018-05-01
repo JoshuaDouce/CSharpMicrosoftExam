@@ -1,0 +1,46 @@
+Thought Experiment
+
+1.Why do you use an attribute instead of inheriting from an interface? Wouldnt it be easier than adding a whole new concet to c#?
+
+Attributes are used to add meta data to types. At runtime, you can query for the existence of an attribute and its settings. And use this to 
+make decisions. -JD
+
+Interfaces cannot say that your type is a kind of but attributes allow you to do this. Inheritane hould not be used to decorate 
+a type with certain info. - TB
+
+2.What can you do about the performance problems with using reflection?
+
+Refeletction can be replace with expression trees. -JD
+
+When you are mapping data to a custom type, you can build an expression tree and cache it. The expression tree can be compiled
+to native code. This is faster than reflection. -TB
+
+3.Which technique woud you use to create your generator?
+
+To generate code you can use the codeDOM. -TB
+
+Objective Summary
+
+-A C# Assembly stores both code and metadata.
+-Attributes are a type of metadata that can be applied in code and queried at run time
+-Reflection is the process of inspecting the metadata of a C# application.
+-Through reflection you can create types, call methods, read props and so forth.
+-TheCodeDom can be used to ceate a compilation unit at runtime. It can be compiled or converted to source code.
+-Expressin trees describe a piece of code. They can be translated to something else or they can be compiled and executed.
+
+Objective Summary
+
+1. You want to read the value of a private field on a class. Which BindingF flags do you need?
+
+A.Instance -The field is nonstatic instance field
+D.NonPublic  -Nonpublic is necessary because the field is private
+
+2. You need to create an attribute that can be applied multiple times on a method parameter. Which Sytnat should you use?
+
+B.[AttributeUsage(AttrbuteTargets.Method|AttributeTargets.Parameter, AllowMultiple=True)]  
+-The attribute targets both METHODS and Parameters. It can also be aplied multiple times.
+
+3. You want to create a delegate that can filter a list of strings on a specific value. Whcih type should you use?
+
+C.Func<String, IEnumerable<string>, IEnumerable<string>>  -It takes both the input list and the value to filter on and returns the filtered list.
+
