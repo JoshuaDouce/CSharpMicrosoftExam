@@ -1,0 +1,34 @@
+Thought Experiment
+
+Make a list of the things you need to keep in mind when updating your application for globalization; 
+-You need to consider the string format and cluture when displaying a string
+-Things such as datetime format, number format and symbols etc.
+-You may need to update ToString methods support multi cultures.
+-Make sure all string comparison use an explicit overload overload that takes a string comparison object
+-Make sure text is persisted using invariant cluture
+-Implement IFormattable for custom types
+
+Objective Summary
+
+-A string is an immutable reference type
+-When doing alot of string manipulations you should use a StringBuilder
+-The string class offers a lot of methods for dealing with strings
+-Strings can be enumerated as a cllection of characters
+-Formatting is displying an objects as a string
+-You can use format strings to change how an object is converted to a string
+-You can implement formatting for your own types
+
+Objective Review
+
+1. You want to display only the Date portion of DateTime according to the french culture. What method should you use?
+
+D. dt.ToString("d", new CultureInfo("fr-FR")) - This will give the date in the correct french format.
+
+2. You want your type to be able to be converted from string. Which interface d you implement?
+
+D. IFormattable - IFormattable provides the functionality to format the value of an object to string. Its also
+used by the convert class to do the opposite.
+
+3. You are passib a large piece of text to replce values based on some complex algorithm. Which class hsould you use?
+
+B.StringBuilder - The string builder is the most efficent when changing large amounts of strings.

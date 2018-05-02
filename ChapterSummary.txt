@@ -1,0 +1,21 @@
+Chapter Summary
+
+-C# uses types such as class, struct, interfaces and enum. Types can have members such as methods, events, fields, properties, indexed 
+properties and constructors
+
+-When working with types, you sometimes need to convert between them. This can be done either implicitly or explicitly. When creating 
+your own types you can add support for these type conversions.
+
+-You use accessors such as public, private, protected, internal protected and internal to enfore encapsulation and accesiblity.
+Properties can be used to encapsulate data.
+
+-An object hierachy can be created by inheritance, and you can have both interface and class inheritance. By marking memebers as virtual
+, a derived class override the member.
+
+-Reflection is the process of inspecting metadata at runtime. Attributes can be used to add metadata to a type.
+
+-C# is a managed language, whihc means that garbage collection make sure that all managed objects are freed from memory whenever 
+they are no longer in use.
+
+-Strings can be used for text. The string type is immutable. The .NET Framework offers a stringbuilder for manipulating lrge amounts of text. 
+Strings can be searched, enumerated and formatted for display

@@ -155,6 +155,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercises", "Exercises", "{
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Chapter2", "Chapter2", "{1FC4465C-2918-49A0-8BDB-12471C76C27C}"
+	ProjectSection(SolutionItems) = preProject
+		ChapterSummary.txt = ChapterSummary.txt
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Objective2.1", "Objective2.1", "{89A3AD04-5A20-432C-8977-E9B032EF63C4}"
 EndProject
@@ -215,6 +218,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercises", "Exercises", "{
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example2-84ImplementingIDispoabeAndFinalizer", "Example2-84ImplementingIDispoabeAndFinalizer\Example2-84ImplementingIDispoabeAndFinalizer.csproj", "{7FB6ECDC-59EC-4F7D-9113-72881B4CD690}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Objective2.7", "Objective2.7", "{FA1ABAEA-6B36-4E4C-A83D-691D42CF4364}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Examples", "Examples", "{75DDF36E-8075-4E43-8170-B66826DEE4D5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercises", "Exercises", "{2ED3C9A3-F5AF-4CD8-BAF4-6DF25770FAB7}"
+	ProjectSection(SolutionItems) = preProject
+		Objective2.7Overview = Objective2.7Overview
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -535,6 +547,9 @@ Global
 		{A2C14523-A3E7-4963-A3FF-7532B1F608B0} = {45C1F5B9-B5AB-4152-88A4-A936F22D0DF7}
 		{BF65800F-85B7-4713-A1D2-0F67018F0182} = {45C1F5B9-B5AB-4152-88A4-A936F22D0DF7}
 		{7FB6ECDC-59EC-4F7D-9113-72881B4CD690} = {A2C14523-A3E7-4963-A3FF-7532B1F608B0}
+		{FA1ABAEA-6B36-4E4C-A83D-691D42CF4364} = {1FC4465C-2918-49A0-8BDB-12471C76C27C}
+		{75DDF36E-8075-4E43-8170-B66826DEE4D5} = {FA1ABAEA-6B36-4E4C-A83D-691D42CF4364}
+		{2ED3C9A3-F5AF-4CD8-BAF4-6DF25770FAB7} = {FA1ABAEA-6B36-4E4C-A83D-691D42CF4364}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BC0DFAE5-B7DE-4802-8BBE-799B7849416C}
