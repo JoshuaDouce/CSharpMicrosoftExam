@@ -1,0 +1,56 @@
+Thought Experiment
+
+1.How can using value types when possible improve your performance? Or could it be that your performance will deteriorate more?
+
+-Reference types are stored on the heap and are managed by the GC.
+-Value types are on the stack most of the time and freed when the method ends.
+-Value types on the stack take up less memory than on the heap. However, if a value type is enclosed in a reference type 
+it is still on the heap.
+-There is no guarantee that that changing the type to a strcy will reduce memory pressure.
+
+2.Why is implementing IDisposable important to reduce memory pressure? Is it always the best to call Dispose on an element as soon as
+you are done with it?
+
+Calling IDisposable reduces memory pressure because it frees up space taken up by objects you no longer need and means it does not have 
+to be Grabage collected. However, calling Dispose takes up CPU time. When leavng things to the GC it will decide when the best time to
+collect is and start clling finalizers.
+
+3.Should you implement a finalizer on all your types that implement IDisposable?
+
+A finalizer is important for making sure an item always frees up unmanaged resources, even when Dispose is not called. It is 
+important to make sure that when Dispose is called, the object is explicity removed from the finalization queue.
+
+4.You have some items that are used alot. Would it be wise to put them in a static field so you dont have to recreate them?
+
+A static field is a root reference. The garbage collector will never free this resource. In this case it would be better
+to use a cache that keeps track of which objects should be kept in memory. A cachng algorithm that decides how frequently an
+object is accesed can make sure yourobjects are around. However, where there is a memory shortage, the cache can turn
+some objects into WeakReferences and make sure they can be garbage collected. 
+
+Objectve Summary
+
+-Memory in C# consists of both the stack and the heap
+-The heap is managed by the garabage collector
+-The garbage collector frees any memory that is not refrenced anymore
+-A finalizer is a special piece of code that is run by the garbage collector when its removes an object
+-IDisposable can be implemented to free any unmanaged resources in a deterministic
+-Objects implementing IDisposable can be used with a using statement to make sure they are alays freed
+-A weak reference can be used to maintain a reference to items that can be garbage collected when neccessary
+
+Objective Review
+
+1. You are about to eecute a piece of code that is performance-sensitive. You are afraid that a garbage collection will occur during
+the execution of this code. Which method should you call before executing your code.
+
+C. GC.Collect() - Collect will execute a grabage collection, freeing as much memory as possible. This wont prevent it happening 
+but will make it less likely.
+
+2. An object that is implementing IDisposable is passed to your class as an argument. Should you wrap the element ina using statement.
+
+D. No the calling method should use a using statement. - The calling code knows what the lifetime of the object should be and 
+should decide when to dispose of the object.
+
+3.Your application is using a lot of memory. Which solution should you use?
+
+C.Use a caching algorithm to deicde which objects can be freed - A caching strategy is the best solution. You can decide whether
+you want to free memory based on usage, a timestamp, or other criteria.
