@@ -235,6 +235,9 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Examples", "Examples", "{3494823B-7DF3-4E38-A04C-3BE1F1C96F24}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercises", "Exercises", "{A1600E89-F6EF-46A0-9404-99D37DE7EFE5}"
+	ProjectSection(SolutionItems) = preProject
+		Objective3.1Overview = Objective3.1Overview
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example3-1CustomerAndAddress", "Example3-1CustomerAndAddress\Example3-1CustomerAndAddress.csproj", "{695F392B-BBD6-4BDF-9EED-34B0FD4F2305}"
 EndProject

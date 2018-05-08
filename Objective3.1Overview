@@ -1,0 +1,28 @@
+Thought Experiment
+
+The problem could be HTML inputted into user forms thats has been saved without validation. 
+
+To solve this adding a regex to check for html inputs could be used to filter this content by invalidating it or remove the html. 
+
+Objective Summary
+
+-Validating application input is important to protect your application against both mistakes and attacks.
+-Data integrity should be managed both by your application and your data store.
+-The parse, Try parse and Convert functions can be used to convert between types.
+-Regular expressions can be used to match input against a specified pattern or replace specified characters with other values. 
+-When receiving JSON and XML files, its important to validate them using the built in types, such as with JavascripSerializer 
+and XML schemas.
+
+Objective Review
+
+1. A user needs to enter a DateTime in a text field. You need to parse the value in code. Which method do you use.
+
+B. DateTime.TryParse
+
+2. You are working in a globalized app. You need to parse a text field where the user enters an amount of money. Which method do use?
+
+B. decimal.TryParse(value, NumberStyles.Currency, UICulture);
+
+3. You need to Validate an XML file. What do you use?
+
+D. XSD
