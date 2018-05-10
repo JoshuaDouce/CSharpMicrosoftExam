@@ -252,6 +252,9 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Examples", "Examples", "{FADA9415-EE4F-415B-9DA4-175A293FBAC6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercises", "Exercises", "{F548EBDE-61E3-4C66-8A52-B86EE8B9748C}"
+	ProjectSection(SolutionItems) = preProject
+		Objective3.2Overview = Objective3.2Overview
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example3-17SymetricEncryptionAlgorithm", "Example3-17SymetricEncryptionAlgorithm\Example3-17SymetricEncryptionAlgorithm.csproj", "{C24D370E-59C6-4BEA-AC1D-81BF8E9E9B8A}"
 EndProject

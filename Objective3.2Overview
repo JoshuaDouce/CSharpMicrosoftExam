@@ -1,0 +1,33 @@
+Thought Experiment
+
+Make a list of the possible technologies that can be used to secure the application
+-Symetric Encryption
+-Asymetric Ecryption
+-Digital Certificates - Makes sure application can safely be installed 
+-Using .NETs' Secure.String on sensitive data
+-Using code access permissions
+
+Objective Summary
+
+-A symetric algorithm uses the same key to encrypt and decrypt the data
+-An asymetric algorithm uses a public and private key that are mathematically linked
+-Hashing is the the process of converting a large amount of data to a smaller hash code
+-Digital Certificates can be used to verify the authenticity of an author
+-CAS are used to restrict the reources and operations av application can access and execute
+-System.Security.SecureString can be used to keep sensitive string data in memory
+
+Objective Review
+
+1. Bob and Alice are using an asymetric algorithm to echange data. Which key should they send to the other party to make this possible?
+
+C. Bob and Alice send eachother their public key. 
+
+2.You need to encrypt a large amount of data. Which algorithm do you use?
+
+D. aesManaged.
+
+3. You need to send sensitive data to another party and you want to make sure that no one tampers with the data. Whcih method do you use?
+
+A - Using the digital certificate X509 can be used to sign hashed data. If the other party uses the Verify method, it can check that the hash hasnt
+changed.
+C - UnicodeEncdoing.GetBytes converts a string to a byte sequence. 
