@@ -258,6 +258,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercises", "Exercises", "{
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example3-17SymetricEncryptionAlgorithm", "Example3-17SymetricEncryptionAlgorithm\Example3-17SymetricEncryptionAlgorithm.csproj", "{C24D370E-59C6-4BEA-AC1D-81BF8E9E9B8A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Objective3.3", "Objective3.3", "{3720D382-89E0-42B0-A501-96F9EAC504BC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -611,6 +613,7 @@ Global
 		{FADA9415-EE4F-415B-9DA4-175A293FBAC6} = {8BCBBA7B-E9D5-4D6A-869B-9D5747B10BF9}
 		{F548EBDE-61E3-4C66-8A52-B86EE8B9748C} = {8BCBBA7B-E9D5-4D6A-869B-9D5747B10BF9}
 		{C24D370E-59C6-4BEA-AC1D-81BF8E9E9B8A} = {FADA9415-EE4F-415B-9DA4-175A293FBAC6}
+		{3720D382-89E0-42B0-A501-96F9EAC504BC} = {684DF96E-54C1-4DD7-9EB4-9FA02A029A24}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BC0DFAE5-B7DE-4802-8BBE-799B7849416C}
