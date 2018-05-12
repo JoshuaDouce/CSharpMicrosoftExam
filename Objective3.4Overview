@@ -1,0 +1,43 @@
+Thought Experiment
+
+You want to start debugging an application remotely.
+
+2.Do you need to deploy a debug version to the server?
+
+No. - A debug version may contain more info however you can debug the realse version if you have the right pdb file.
+
+3.What do you need to make this possible?
+
+You need the correct PDB file that matches the build that is running. You need the file to launch a debugging session.
+
+4.How can a symbol server help you?
+
+A symbol server is used to store your PDB files and helps the deugger find the correct version. If you have a symbol server
+, you can easily start a ebugging session to your server and the debugger will find the correct PDB file automatically.
+
+Objective Summary
+
+-Visual Studio build configs can be used to configure the compiler
+-A debug build outputs non-optiized version of the code that contains extra instructions to help debugging.
+-A release build outputs the optimized code that can be deployed to a production environment
+-Compiler directives can be used to give extra instructions to the compiler. You can use them, for example
+to include code only in certain build configs to to suppress certain warnings
+-A program database(PDB) is required when debugging an app
+
+Objective Review
+
+1. You are ready to deploy your code to a prod server. Which config do you deploy?
+
+B. Release config. - A release config is fully optimized and will give the best results in production
+
+2. You are debugging an app for a web shop and are inspecting a lot of order classes. What can you do to make
+debugiing easier.
+
+A. Use the debugger display attribuute. - This can help supply a more helpful description when inspecting
+through the debugger.
+
+3. You are using custom code generation to insert security checks into your classes. When an exeption happens, you 
+are having toruble finding the correct line in your source code. What should you do?
+
+D. Use the #line directive with the correct line numbers in your generated code to restore original line numbers. - 
+This can remove the line numbers from the generated code so that exceptions match the original

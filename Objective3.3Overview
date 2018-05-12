@@ -1,0 +1,43 @@
+Thought Experiment
+
+1.Should you sign the assemby?
+
+You should sign the assembly because
+
+2.What are the advantages and disadvantages of signing?
+-It guarantees uniqueness of the assembly
+-It protects versioning lineage
+-Provides a strong integrity check
+-It ensures a user can trust your assembly
+
+Objective Summary
+
+-An assembly is a compiled unit of code that contains metadata.
+-An assembly can be strongly signed to make sure that no one can tamper with the content
+-Signed assemblie can be put in the GAC
+-An assembly can be versioned, and applications will use the assembly version they were developed with.
+It is possible to ue configuration files to change the bindings
+-A WinMD assembly is a special type of assembly that is used by WinRT to map nonnative languages to thr native WinRT
+components.
+
+Objective Review
+
+1.You are building a strong named assembly and you want to reference a regular assembly to reuse some code you built.
+What do you have to do?
+
+C. You need to sign the other assembly before using it - When using a strongly named assembly you must sign an non strongly 
+named assembly before using it.
+
+2. You are building an assembly that will be used by a couple of server apps.You want to make the update process of this
+assembly as smooth as possible.  Which steps should you take?
+
+B. Deploy the assembly to the GAC. - A share dassembly can be deployed in the GAC so other applications can reference it 
+here. When you want to update it, you can do so by deploying the new version to the GAC. By using config files, you
+can let other apps reference your new assembly.
+D. Strongly name the assembly - STringly naming an assembly is required to be deployed to the GAC
+
+3.You want to deploy an assembly to a shared location on the intranet. Which steps should you take?
+
+A. Strongly name the assembly - Strong naming is require to able to e referenced on the intranet.
+B. Use the codebase configuration element in the application that use the assembly - The codebase config element 
+can be used to have local client apps know they can find an assembly on another location suh as the intranet.
