@@ -1,0 +1,17 @@
+Chapter Summary
+
+-Validating app input is important to ensure the satbility and security of your app. You can use
+the Parse, TryParse and Convert functions to parse user input. Reg Expressions can be used for
+matching patterns.
+
+-Cryptography uses symetric and asymetric algorithms together with hashing to secure data.
+
+-Code access permissions can be used to restrict the types of operations a program may execute.
+
+-An assembly is a self-contained unit that contains applicaion code and metadata. An assembly can
+be signed, versioned and shared by putting it in the GAC.
+
+-By selecting the correct build and configs, you can output additional info to create a program 
+database file that can be used to debug an app.
+
+-By using logging, tracing and performance counters, you can monitor an app while its in production

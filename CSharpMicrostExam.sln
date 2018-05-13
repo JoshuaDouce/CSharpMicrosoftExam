@@ -229,6 +229,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercises", "Exercises", "{
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Chapter3", "Chapter3", "{684DF96E-54C1-4DD7-9EB4-9FA02A029A24}"
+	ProjectSection(SolutionItems) = preProject
+		Chapter3Summary.txt = Chapter3Summary.txt
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Objective3.1", "Objective3.1", "{1581D02B-5938-4C21-BF9F-C74E5C993A4C}"
 EndProject
@@ -274,6 +277,15 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercises", "Exercises", "{298B11F1-B209-48E6-8DB5-34B946443DFD}"
 	ProjectSection(SolutionItems) = preProject
 		Objective3.4Overview = Objective3.4Overview
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Objective3.5", "Objective3.5", "{8045F376-4F64-495B-A4B4-E14053C73059}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Examples", "Examples", "{390250EB-276D-4D57-A2C2-BB7032C46F47}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercises", "Exercises", "{B3297CD3-60A4-4A32-8DB8-88CEFF64F88D}"
+	ProjectSection(SolutionItems) = preProject
+		Objective3.5Overview = Objective3.5Overview
 	EndProjectSection
 EndProject
 Global
@@ -635,6 +647,9 @@ Global
 		{6E98D8F6-74B2-47A8-9637-3DE6598F2169} = {684DF96E-54C1-4DD7-9EB4-9FA02A029A24}
 		{67B228BE-3A04-40DA-8A0D-27C674B5A8C5} = {6E98D8F6-74B2-47A8-9637-3DE6598F2169}
 		{298B11F1-B209-48E6-8DB5-34B946443DFD} = {6E98D8F6-74B2-47A8-9637-3DE6598F2169}
+		{8045F376-4F64-495B-A4B4-E14053C73059} = {684DF96E-54C1-4DD7-9EB4-9FA02A029A24}
+		{390250EB-276D-4D57-A2C2-BB7032C46F47} = {8045F376-4F64-495B-A4B4-E14053C73059}
+		{B3297CD3-60A4-4A32-8DB8-88CEFF64F88D} = {8045F376-4F64-495B-A4B4-E14053C73059}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BC0DFAE5-B7DE-4802-8BBE-799B7849416C}

@@ -1,0 +1,47 @@
+Thought Experiment
+
+1.Which events would you write to a trace source in a web shop?
+
+-Critical. to log irrecoverable errors.
+-Error. when submitting an order and you need to retry
+-Warning. when the time it takes to submit an order is suddenly longer
+-Information. A succeful order placed
+-Verbose - can be used to trace all applicatin events.
+
+2.How can you use performance counters to keep an eye on performance?
+
+Performance counters can be used to for counting the number of operations on an item.
+They can be used to to calculate the amount of per sec of an item or operation.
+Can be used to calculate the average time to perform a process or process an item.
+They can help tracking how may orders are submitted and how long it takes to save them orders. You 
+can also use it soo see how long it takes to load the product catalog for example.
+
+Objective Summary
+
+-Logging and tracing are important to monitor an application that is in production and should be implemented 
+from the start.
+-You can use Debug and Tracesource classes to log and trace messages. By configuring different listeners, you can
+configure your application to know which data to send where.
+-When you are experiencing performnce problems, you can profile your application to find the root cause and fix it.
+-Performance counters can be used to constantly monitor the health of your application
+
+Objective Review
+
+1.You are using the TraceSource class to trace data for your app. You want to trace when an order cannot be submitted
+to the database and you are going to perform a retry. Which trace event type should you use?
+
+D. Error - You should let the operators know that something is wrong and that you are trying to recover. If recovery fails,
+you should log a critical.
+
+2. Users are reporting errors in your app, and you want to configure your app to output more trace data. Which config
+setting should you change?
+
+D. Switch - The switch value determines which trace events should be handled. By lowering the severity for the switch,
+you will see more trace events in your output
+
+3.You are working on a global app with lots of users. The operation staff request info on how many user logons per second
+are occuring. What should you do?
+
+B.Enable performance counters. This performance counter will help the operation staff to see exactly what happens every
+second.
+
