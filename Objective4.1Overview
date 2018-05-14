@@ -1,0 +1,50 @@
+Thought Experiment
+
+1. Which classes do you plan to use?
+
+-DirectoryInfo
+-FileInfo
+-Path
+
+You can use these for searching through folders for specific files.
+You can use the path class for making sure locations are valid.
+
+2. How will you filter the files by specific file type?
+
+You can use a search atter when looking for files.
+
+3. Do you need asynchronous code?
+
+When working with I/O you should always try to use asyncrhonous options when possible.
+This will make sure the UI remains responsive.
+
+Objective Summary
+
+-You can work with drive using Drive and DriveInfo
+-For folders, you can use Directory and DirectoryInfo
+-File and FileInfo offer methods to work with files
+-The static Path class can help you in creating and parsing file paths
+-There are many Stream implementations for dealing with files, network ops and any other
+types of I/O.
+-Remember that the file system can be accessed and changed by multiple users at the same time.
+You need to keep this in mind when creating reliable apps.
+-When performin network requests, you can use the WebRequest and WebResponse classes from the 
+System.Net namespace.
+-Async I/O can help you create a better user experience and a more scalable app.
+
+Objective Review
+
+1. You are creating a new file to store some log data. Each time a new log entry is neccessary, you
+write a string to the file. Which method do you use?
+
+D. File.AppendText - Adds text to the end of a file.
+
+2. You have built a complex calculation algorithm. It takes quite some time to complete and you
+want to make sure that your app remains responsive. What do you do?
+
+C. Task.Run - this will run the CPU-bound code on a seperate thread. It will free up the user interface.
+
+3. You are writing an app that will be deployed to Western countries. It outputs user activity to a text file.
+Which encoding should you use?
+
+A. UTF-8 - is a general purpose encoding format that works on many operating systems.

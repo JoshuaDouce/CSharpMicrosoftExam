@@ -295,6 +295,9 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Examples", "Examples", "{9A05F76D-71A8-48C6-9382-951111BD2E4D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercises", "Exercises", "{C038A04D-4F56-4B47-8D16-B098242B2FF8}"
+	ProjectSection(SolutionItems) = preProject
+		Objective4.1Overview = Objective4.1Overview
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example4-1ListingDriveInfo", "Example4-1ListingDriveInfo\Example4-1ListingDriveInfo.csproj", "{97542FAE-F148-438A-8BAA-E8A2F75EA98B}"
 EndProject
