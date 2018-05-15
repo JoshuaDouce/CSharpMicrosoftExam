@@ -1,0 +1,46 @@
+Thought Experiment
+
+1.What are the advantages and disadvantages of using the Entity Framework?
+
+-The entity framework can increase your development speed
+-However it can reduce performance
+-It is also felxible in providing multiple ways to model a database for example
+	-Database First
+	-Model Fisrt
+	-Code First
+
+2.Which techniques do you plan to use for your web service?
+
+I would also create a proxy from which the service can be consumed
+I would plan to use the .net frameowrks WCF service that exposes operations that can be requested by consumers
+of the web service
+
+3. How will you expose the data as XML.
+
+You could output the results as an XML file in hierachily structure that bets represents the data.
+
+Objective Summary
+
+-ADO.NET uses a provider model that enables you to connect to different types of databases.
+-You use a DbConnection object to create a connection to a database
+-You can execute queries that CRUD data from a database
+-When creating queries its important to use parametrized queries to avoid SQL injection attacks
+-You can consume a web service from your app by creating a proxy for it.
+-You can work with XML by using the XMLReader, Writer, PathNavigator and Doc classes.
+
+Objective Review
+
+1.You want to update a specific row in a database. Which objects should you use?
+
+A.SQLCommand - You need a sql command to execute your query against the database
+C.SQLConnection - You need a sqlConnection to establish a connection to a database
+
+2.You are planning to build an app that will use an OO design. It will be used by multiple users at the same time. Which
+tech should you use?
+
+B.Entity Framework - A relational database that stores the data with Entity framework mapping it to your objects help you with 
+quickly developing your app.
+
+3. You need to process a large number of XML files in a scheduled service to extract some data. Which class should you use?
+
+B.XMLReader -XMLReader is the fasetes option when processing a lot of XMLFiles. 
