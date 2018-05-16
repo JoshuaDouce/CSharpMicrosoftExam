@@ -58,6 +58,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example1-27CatchingAggregateException", "Example1-27CatchingAggregateException\Example1-27CatchingAggregateException.csproj", "{EC8B00CA-0598-428E-B70F-4D43050973BF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Chapter1", "Chapter1", "{C2EA2FDC-3F4A-4748-91F6-E40627D37635}"
+	ProjectSection(SolutionItems) = preProject
+		Chappter1Summary.txt = Chappter1Summary.txt
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Objective1.1", "Objective1.1", "{BC5381D9-5906-4BE3-9710-D96C77E67EE7}"
 EndProject

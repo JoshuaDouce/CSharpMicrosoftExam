@@ -1,0 +1,17 @@
+Chapter Summary
+
+-Multithreading can help you create programs that are responsive and scalable. You can use TPL, the parallel class
+and PLINQ for this. The new async/await keywoeds help you write asynchronous code.
+
+-In a multithreaded environment, its important to manage synchronization of shared data. You can do this by using
+the lock statement.
+
+-C# offers statements for making decisons - if, switch, ? and ??. Iterating (for, foreach, while and do-while).
+Jump statements(break, continue, goto, return and throw)
+
+-Delegates are objects that point to a method and can be used to invoke the method. Lambda expressions are a shorthand
+syntax for creating anonymous inline methods.
+
+-Events are a layer on top of delegates that help you with creating a publish-subscribe architecture.
+
+-Exceptions are the prefered way to work with errors in the .NET framework. You can throw exceptions, catch them, and run in a finally block.
