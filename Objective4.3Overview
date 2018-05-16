@@ -1,0 +1,61 @@
+Thouhgt Experiment
+
+1. Does LINQ have any performance problems? If so should it be avoided?
+
+-Although it is true that LINQ is not always as fast as a manual loop or filter, you get a lot of other benefits.
+-LINQ to entities translates your LINQ to SQL, which enables you to create stringly typed queries against your database.
+-LINQ to XML uses it to process an XML file with more fluent syntax than by hand.
+-The biggest advantage is that you can use a uniform, strongly typed way of querying multiple data sources.
+-Most of the time dev time is more important than premature optimization.
+
+2. Is LINQ easy to maintain?
+
+-Yes as is it is more compact and easy to read.
+-LINQ is strongly typed and easier to read than a handwritten loop
+-LINQ offers multiple operators such as Sum, Average, GroupBy etc
+
+3. What are the differences between method and query syntax? Which should be used?
+
+-Query syntax is translated into method syntax by the compiler. Not all operators are supported in query syntax.
+If you need a special operator not available in query syntax you are force to use method syntax.
+-Query syntax is more readable and should be used whenever possible.
+
+Objective Summary
+
+-LINQ stands for Language Integrated Query. is a uniform way of writing queries against multiple data sources.
+-Importnat language features when working with LINQ queries are implicit typing, object intialization syntax, 
+lambdas, extension methods and anonymous types.
+-You can use LINQ with a method based syntax and the query syntax
+-LINQ queries are defrered execution, which means they wont execute until its been iterated over.
+-You can use LINQ to XML to query, create and ipdate XML.
+
+Objective Review
+
+1. You have a lidt of dates. You want to filter the dates to the cirrent year then select the highest date. 
+Which query do you use?
+
+B. DateTime result = dates.Where(d => d.year == DateTime.Now.Year).OrderByDescending(d => d).FirstOrDefault();
+-This will return the highest date of the current year and will return default if it cannot find a value for the current year.
+
+2. You are trying to use a LINQ query, but you are getting a compile error that the where method cannot be found.
+What should you do?
+
+A. Add using System.LINQ - Needs to be added to use LINQ
+B. Check that you are using a type that implemens IEnumerable - LINQ is implemented as extension methods on IEnumerable. 
+If you rtype does not implement IEnumerable you cannot use the method.
+
+
+3.You are using the following LINQ to query entities: 
+
+var query = from p in myContext.Products
+			where p.price < 50
+			select p;
+int numberOfItems - query.Count();
+var products = query.ToList();
+
+You are suffering perofrmance problems. How can you improve your query?
+
+A. Avoid hitting the database multiple times - Because of defered execution nature of LINQ you execute the query twice. 
+One for getting the numbe of items, and one for getting all the products. You can change your query to get both these in one call.
+
+C. Use Paging. - Page will limit the number of items you retrieve.
