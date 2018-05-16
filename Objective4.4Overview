@@ -1,0 +1,44 @@
+Thought Experiment
+
+You are wondering which serialization would be best. You think about XML binary, JSON or using a Data Contract.
+
+1. To which format should you serialize the data?
+
+-You could use the binary format which is the smallest and most efficient.
+-XML and JSON are both human readable but result in larger files and is slower to serialize.
+
+2. Which serializer should you use?
+
+-You can use the binaryFormatter to serialize your data.
+
+3. Do you need to implement any specific serialization methods on your type?
+
+-Because you have sensitice data it important that you implement the ISerializable interface so you have full
+control over these properties. Otherwise someone coudld open your binary file and extract these credentilas.
+
+Objective Summary
+
+-Serialization is the process of tranforming an object into a flat file or series of bytes.
+-Deserialization takes a flat file or series of bytes and turns it into an object.
+-XML Serialization can be done using the XMLSerializer
+-You can use special attributes to configure the serializer
+-Binary serialization can be done using the binary formatter class
+-WCF uses anther type of serialization that is performed using the data contarct serializer.
+-JSON is a compact text format that can be created using the DataContractJsonSerializer.
+
+Objective Review
+
+1. You need to store a large amount of data, and you want to do this in the most optimal way. Which
+serializer should you use.
+
+B. BinaryFormatter - A binary format is the most efficient for large data sets. 
+
+2.You are serializing some sensitive data to a binary format. WHat should you use?
+
+B. ISerializable - ISerializable should be implemented when handling sensitive data
+D. Binary formatter - The binary formatter can be used to serialize to binary format.
+
+3. You want serialize some data to XML, and you need to make sure that a certain property is no serialized. 
+Which attribute do you use. 
+
+C. XMLIgnore - Used to ignore an attribute 
