@@ -289,6 +289,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercises", "Exercises", "{
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Chapter4", "Chapter4", "{682307B4-8D50-4556-8C7C-1249E023C048}"
+	ProjectSection(SolutionItems) = preProject
+		Chapter4Summary.txt = Chapter4Summary.txt
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Objective4.1", "Objective4.1", "{048133B1-D59D-4DA0-8FA9-97A7F57514AC}"
 EndProject

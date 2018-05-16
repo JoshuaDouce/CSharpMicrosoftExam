@@ -1,0 +1,17 @@
+Chapter Summary
+
+-You can use classes such as Drive, DriveInfo, Directory, DirectoryInfo, File and FileInfo to work with the 
+file system. All I/O uses Streams, which are an abstarction over a series of bytes.
+
+-Asynchronous code is important for long running tasks to improve responsiveness and scalability.
+
+-When working with a database, you can use ADO.NET to establish a connection, execute commands and retrieve results.
+
+-The.NET framework has support for working with XML by using classes such as XMLWriter, XMLReader and XMLDocument or
+by using LINQ to XML.
+
+-LINQ offers a unfirom way of querying different data sources.
+
+-Serializing and deserializing is the proces off transforming an object to a flat file or bytes and vice versa.
+
+-The .NET framework offers a comprehensive set of collections that you can use in differnet scenarios.
