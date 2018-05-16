@@ -1,0 +1,46 @@
+Thought Experiment
+
+1. When should you use a generic or non-gneric collection?
+
+When working with objects of one specific type or base type use a generic collection otherwise use non generic.
+
+2.Whats the differnce between the dictionary and list bases collections. When should you use one or the other.
+
+-A list based collection provides a list of indexed items that can be accessed randomly.
+-A dictionary based collection stores key value pairs and can retireve objects using the key however does not allow
+duplicate keys.
+
+You should use a list when you dont need key value pairs.
+
+3. Whats the difference between Stack, Queue and List collections.
+
+-Stack is a FILO collection
+-Queue is a FIFO collection
+-List is s collection of objects that you can access using an index.
+
+Objective Summary
+
+-The .NET framework offers bith generic and non-generic collections. When possible, you should use generic version.
+-Array is the most basic type of collection, it stores a fixed number of items.
+-List is a collection that can grow when needed. Its the most common collection.
+-Dictionary stores and access items using key value pairs.
+-HashSet stores unqiue items and offers set operations that can be used on them
+-A queue is FIFO collection
+-A stack is FILO collection
+-You can create custome collections by inheriting from a collection or inheriting from one fo the collection interfaces.
+
+Objective Review
+
+1. You want to store a group of orders and make sure that a user can easily select an order by its number. Which collection
+do you use?
+
+B. Dictionary<int, Order> you can easly select an Order by ID.
+
+2. You are using a queue and you want to add a new item. Which method do you use.
+
+D. Enqueue
+
+3.You are working with a large group of family name objects. You need to remove all duplicates and then group them by last name.
+
+A. List<T> - Stores all duplicate family names
+C. Dictionary<string, T> - Can be used to store the nonduplicated items on fmaily name.
