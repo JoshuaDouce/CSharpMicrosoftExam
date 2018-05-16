@@ -57,7 +57,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example1-26UsingForAll", "E
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example1-27CatchingAggregateException", "Example1-27CatchingAggregateException\Example1-27CatchingAggregateException.csproj", "{EC8B00CA-0598-428E-B70F-4D43050973BF}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Chapter1", "Chapter1", "{C2EA2FDC-3F4A-4748-91F6-E40627D37635}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Chapter1-ManageProgramFlow", "Chapter1-ManageProgramFlow", "{C2EA2FDC-3F4A-4748-91F6-E40627D37635}"
 	ProjectSection(SolutionItems) = preProject
 		Chappter1Summary.txt = Chappter1Summary.txt
 	EndProjectSection
@@ -157,7 +157,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercises", "Exercises", "{
 		Objective1.5Overview.txt = Objective1.5Overview.txt
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Chapter2", "Chapter2", "{1FC4465C-2918-49A0-8BDB-12471C76C27C}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Chapter2-CreateAndUseTypes", "Chapter2-CreateAndUseTypes", "{1FC4465C-2918-49A0-8BDB-12471C76C27C}"
 	ProjectSection(SolutionItems) = preProject
 		ChapterSummary.txt = ChapterSummary.txt
 	EndProjectSection
@@ -231,7 +231,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercises", "Exercises", "{
 		Objective2.7Overview = Objective2.7Overview
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Chapter3", "Chapter3", "{684DF96E-54C1-4DD7-9EB4-9FA02A029A24}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Chapter3-DebuggingAndSecurity", "Chapter3-DebuggingAndSecurity", "{684DF96E-54C1-4DD7-9EB4-9FA02A029A24}"
 	ProjectSection(SolutionItems) = preProject
 		Chapter3Summary.txt = Chapter3Summary.txt
 	EndProjectSection
@@ -291,7 +291,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercises", "Exercises", "{
 		Objective3.5Overview = Objective3.5Overview
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Chapter4", "Chapter4", "{682307B4-8D50-4556-8C7C-1249E023C048}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Chapter4-ImplementDataAccess", "Chapter4-ImplementDataAccess", "{682307B4-8D50-4556-8C7C-1249E023C048}"
 	ProjectSection(SolutionItems) = preProject
 		Chapter4Summary.txt = Chapter4Summary.txt
 	EndProjectSection
@@ -343,6 +343,11 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercises", "Exercises", "{F898D482-5573-4A4F-8025-D6E32C807DFB}"
 	ProjectSection(SolutionItems) = preProject
 		Objective4.5Overview = Objective4.5Overview
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NotesAndResources", "NotesAndResources", "{AEA77713-BA6F-4450-B65F-6E10715B950B}"
+	ProjectSection(SolutionItems) = preProject
+		MicrosftCertifiedExamPrepNotes.txt = MicrosftCertifiedExamPrepNotes.txt
 	EndProjectSection
 EndProject
 Global

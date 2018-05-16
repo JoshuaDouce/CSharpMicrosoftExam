@@ -1,0 +1,83 @@
+---
+Notes from - https://channel9.msdn.com/Blogs/mcpexamprep/70-483-Programming-in-C
+---
+
+Tips: Evrything in exam must exist for example interfaces, classes etc.
+
+---
+
+Managing Program Flow
+
+---
+Thread 
+	- Advantage - You have full control of the thread
+	- Disadvantage - You have to fully manage the thread and give us alot more than we likely need
+
+---
+Thread Pool 
+	-The CLR manages a pool of threads optimized based on environment
+	-New thread requests are placed in a queue
+	-Using the thread pool is the prefered mechanism for managing threads
+
+---
+Tasks
+	-Tasks represent an asynchronous operation.
+	-It will run in the background then notify when it has a result
+	-Task reference an action delegate that has an Action Delegate that has return type.
+	-It has no parameters but does have a state.
+	-To cancel a task you use a CancelationToken and use the property IsCancellationRequested.
+	-To reate a cancellation token you need a tokensource.
+
+---
+Async/Await
+	-This is built on tasks.
+	-Async marks an operation asynchronous, to use you need to decorate a method with async keyword.
+	-Await signals to wait but it is not done on the main thread therefore not blocking the mian thread.
+
+---
+AsParalell()
+	-Takes a collection of items and make all operation on thse items run in parallell
+	-You have to convert the collection first.
+
+---
+Throw
+	-To throw an original exception with an originial stack trace you just need to use the keyword throw.
+
+---
+Create and use types
+
+---
+Constructors
+	-The defualt constructor sets all fields either null, 0 or false
+	-Setting a private constructor will mean no default constructor is created
+	-You cannot inherit from a class using a private constructor
+	-Creating a custom constructor means no default is created.
+	
+---
+Generics
+	-Genrics are effectively a variable for a type
+
+---
+Debugging and Implementing Security
+
+---
+Encryption
+	-Symetric Encryption - Single key, reversible encryption, good for large data sets.
+	-Asymetric Encryption - Two keys, reversible, good for encrypting keys, one key locks othe rkey unlocks
+		-One private key only you have
+		-One public key you distribute
+	-Hashing - Irreversible encryption, hash into cypher text
+
+---
+Logging
+	-To write to the event log create a new event log, specify a source then use write entry.
+	-Trace logging can be done in the app config
+		-You need a switch that indicates the level of trace logging
+		-Need to indicate where to write it out to
+	-To use tracing, new up a tracesource, specify listeners or write to all listeners using trace event
+
+---
+Implementing Data Access
+
+---
+
