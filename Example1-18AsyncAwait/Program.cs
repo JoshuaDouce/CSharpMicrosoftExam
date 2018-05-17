@@ -7,19 +7,21 @@ using System.Threading.Tasks;
 
 namespace Example1_18AsyncAwait
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             //accesss result on main thread which blocks teh code until the async method completes
-            string result = DownloadContent().Result;
+            var result = DownloadContent().Result;
             Console.WriteLine(result);
         }
 
+        //Method needs to be decorated with async dignature to ensure the mehod is asynchronous
         public static async Task<string> DownloadContent() {
-            using (HttpClient client = new HttpClient()) {
+            //the using statement ensures IDisposable is called when the function is complete
+            using (var client = new HttpClient()) {
                 //GetStringAsync uses asynchronous code internally and returns Task<string>
-                string result = await client.GetStringAsync("http://www.microsoft.com");
+                var result = await client.GetStringAsync("http://www.microsoft.com");
                 return result;
             }
         }

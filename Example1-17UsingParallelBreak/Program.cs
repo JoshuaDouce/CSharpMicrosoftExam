@@ -6,31 +6,24 @@ using System.Threading.Tasks;
 
 namespace Example1_17UsingParallelBreak
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
-            ParallelLoopResult result = Parallel.
+            var result = Parallel.
                 For(0, 1000, (int i, ParallelLoopState loopState) => {
-                    if (i == 500) {
-                        Console.WriteLine("Breaking Loop");
-                        //Break ensures all iterations that are currently running will be finished
-                        loopState.Break();
-                    }
-
-                    return;
+                    if (i != 500) return;
+                    Console.WriteLine("Breaking Loop");
+                    //Break ensures all iterations that are currently running will be finished
+                    loopState.Break();
                 });
 
-            ParallelLoopResult result2 = Parallel.
+            var result2 = Parallel.
                 For(0, 1000, (int i, ParallelLoopState loopState) => {
-                    if (i == 500)
-                    {
-                        Console.WriteLine("Stopping Loop");
-                        //Stop terminates everything
-                        loopState.Stop();
-                    }
-
-                    return;
+                    if (i != 500) return;
+                    Console.WriteLine("Stopping Loop");
+                    //Stop terminates everything
+                    loopState.Stop();
                 });
         }
     }
