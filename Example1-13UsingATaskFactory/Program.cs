@@ -6,15 +6,17 @@ using System.Threading.Tasks;
 
 namespace Example1_13UsingATaskFactory
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
-            Task<Int32[]> parent = Task.Run(() => {
-                var results = new Int32[3];
+            var parent = Task.Run(() => {
+                var results = new int[3];
 
-                TaskFactory tf = new TaskFactory(TaskCreationOptions.AttachedToParent, TaskContinuationOptions.ExecuteSynchronously);
+                //Create a new task factory that creates a task that attaches to parent with contiuation option of synchronous execution
+                var tf = new TaskFactory(TaskCreationOptions.AttachedToParent, TaskContinuationOptions.ExecuteSynchronously);
 
+                //These tasks are created by the task factory using the config specified.
                 tf.StartNew(() => results[0] = 0);
                 tf.StartNew(() => results[1] = 1);
                 tf.StartNew(() => results[2] = 2);

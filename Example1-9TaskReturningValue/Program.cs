@@ -6,13 +6,12 @@ using System.Threading.Tasks;
 
 namespace Example1_9TaskReturningValue
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
-            Task<int> t = Task.Run(() => {
-                return 42;
-            });
+            //Creates a task and runs it immediately returning the value 42
+            var t = Task.Run(() => 42);
             Console.WriteLine(t.Result); //Displays 42
         }
     }

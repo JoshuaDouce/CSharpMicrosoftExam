@@ -6,13 +6,15 @@ using System.Threading.Tasks;
 
 namespace Example1_10AddingATaskContinuation
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
-            Task<int> t = Task.Run(() =>
+            //Starts a task that returns 42
+            var t = Task.Run(() =>
             {
                 return 42;
+                //continue this task and take the result of the previous task and multiply it by 2
             }).ContinueWith((i) => {
                 return i.Result * 2;
             }); ;

@@ -7,12 +7,14 @@ using System.Threading.Tasks;
 
 namespace Example1_14TaskWaitAll
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
-            Task[] tasks = new Task[3];
+            //Create an array of tasks
+            var tasks = new Task[3];
 
+            //Start each task
             tasks[0] = Task.Run(() => {
                 Thread.Sleep(1000);
                 Console.WriteLine("1");
@@ -31,6 +33,8 @@ namespace Example1_14TaskWaitAll
                 return 3;
             });
 
+            //Using wait all executes the tasks asynchronousy therefore only taking 1000ms and 3000ms if 
+            //executed synchronously
             Task.WaitAll(tasks);
         }
     }

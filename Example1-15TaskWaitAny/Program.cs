@@ -7,12 +7,12 @@ using System.Threading;
 
 namespace Example1_15TaskWaitAny
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             //Create array of tasks that retirn an int of size 3
-            Task<int>[] tasks = new Task<int>[3];
+            var tasks = new Task<int>[3];
 
             tasks[0] = Task.Run(() => {
                 Thread.Sleep(2000);
@@ -29,9 +29,9 @@ namespace Example1_15TaskWaitAny
 
             while (tasks.Length > 0)
             {
-                //when task is completed
-                int i = Task.WaitAny(tasks);
-                Task<int> completedTask = tasks[i];
+                //when a task is completed, WaitAny will process a task as soon as it is completed
+                var i = Task.WaitAny(tasks);
+                var completedTask = tasks[i];
 
                 //write result
                 Console.WriteLine(completedTask.Result);

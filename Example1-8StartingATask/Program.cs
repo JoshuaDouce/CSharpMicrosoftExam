@@ -6,20 +6,29 @@ using System.Threading.Tasks;
 
 namespace Example1_8StartingATask
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             //Creates a new task and immediately starts it.
-            Task t = Task.Run(() => {
-                for (int i = 0; i < 100; i++)
+            var t = Task.Run(() => {
+                for (var i = 0; i < 100; i++)
                 {
                     Console.WriteLine('*');
                 }
             });
 
+            var t2 = Task.Run(() =>
+            {
+                for (var i = 0; i < 100; i++)
+                {
+                    Console.WriteLine("Hello");
+                }
+            });
+
             //waits until the task is finished before closing
             t.Wait();
+            t2.Wait();
         }
     }
 }
