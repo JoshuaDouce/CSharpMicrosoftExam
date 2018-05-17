@@ -6,22 +6,41 @@ using System.Threading;
 
 namespace Example1_3ParameterizedThread
 {
-    class Program
+    internal class Program
     {
+        //A method the thread will execute that takes a parameter
         public static void ThreadMethod(object o)
         {
-            for (int i = 0; i < (int)o; i++)
+            //Here object o has been explicitly cast to an int in this case as its the expected type
+            for (var i = 0; i < (int)o; i++)
             {
-                Console.WriteLine("ThreadProc: {0}", i);
+                Console.WriteLine($"ThreadProc: {i}");
                 Thread.Sleep(0);
             }
         }
 
-        static void Main(string[] args)
+        //A method the thread will execute that takes a parameter
+        public static void ThreadMethod2(object o)
         {
-            Thread t = new Thread(new ParameterizedThreadStart(ThreadMethod));
+            for (var i = 0; i < 5; i++)
+            {
+                Console.WriteLine($"{o}:{i}");
+            }
+        }
+
+        private static void Main(string[] args)
+        {
+            //Create a new thread using the parameterized method
+            var t = new Thread(ThreadMethod);
+            var t2 = new Thread(ThreadMethod2);
+            
+            //Start the method and pass the parameter, method will execute with this parameter
             t.Start(5);
+            t2.Start("Executing");
+
+            //Join back to the main thread
             t.Join();
+            t2.Join();
         }
     }
 }
