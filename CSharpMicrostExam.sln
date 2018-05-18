@@ -76,7 +76,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example1-32ConcurrentStack"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example1-33ConcurrentQueue", "Example1-33ConcurrentQueue\Example1-33ConcurrentQueue.csproj", "{ECA8B1F3-4170-4E47-8C4E-F8E983A1D1B8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example1-24ConcurrentDictionary", "Example1-24ConcurrentDictionary\Example1-24ConcurrentDictionary.csproj", "{20B7E0B7-CA87-40ED-B132-9D389B2BC4A6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example1-34ConcurrentDictionary", "Example1-24ConcurrentDictionary\Example1-34ConcurrentDictionary.csproj", "{20B7E0B7-CA87-40ED-B132-9D389B2BC4A6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Examples", "Examples", "{B73F23E6-3D83-4C57-9A5D-B37CBA367EC8}"
 EndProject

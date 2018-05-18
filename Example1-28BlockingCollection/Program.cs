@@ -7,23 +7,28 @@ using System.Collections.Concurrent;
 
 namespace Example1_28BlockingCollection
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        //A blockin g collection is a thread safe collection for adding and removing data
+        private static void Main(string[] args)
         {
-            BlockingCollection<string> col = new BlockingCollection<string>();
+            var col = new BlockingCollection<string>();
 
-            Task read = Task.Run(() => {
+            //Listens for new items being added and blocks if no items
+            //are available
+            var read = Task.Run(() => {
                 while (true)
                 {
                     Console.WriteLine(col.Take());
                 }
             });
 
-            Task write = Task.Run(() => {
+            //A task to add an item to a collection
+            var write = Task.Run(() => {
                 while (true)
                 {
-                    string s = Console.ReadLine();
+                    var s = Console.ReadLine();
+                    //If no data is entered terminate
                     if (string.IsNullOrWhiteSpace(s)) break ;
                     col.Add(s);
                 }

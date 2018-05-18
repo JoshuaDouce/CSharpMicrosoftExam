@@ -7,25 +7,25 @@ using System.Collections.Concurrent;
 
 namespace Example1_30ConcurrentBag
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        //The concurrent bag us just a bag if items. It enables duplication and
+        //has no particular order
+        private static void Main(string[] args)
         {
-            ConcurrentBag<int> bag = new ConcurrentBag<int>();
+            var bag = new ConcurrentBag<int> {42, 21};
 
-            bag.Add(42);
-            bag.Add(21);
-
-            int result;
-
-            if (bag.TryTake(out result))
+            //Try take will get the next item
+            if (bag.TryTake(out var result))
             {
                 Console.WriteLine(result);
             }
 
+            //Try peek will check if there is another item in the bag
+            //Not very useful in multithreaded environment as another tthread could remove the item
             if (bag.TryPeek(out result))
             {
-                Console.WriteLine("There is a next item: {0}", result);
+                Console.WriteLine($"There is a next item: {result}");
             }
         }
     }

@@ -7,28 +7,33 @@ using System.Threading.Tasks;
 
 namespace Example1_20UsingConfigureAwait
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
         }
 
         //an example of a button event handler in a wpf applicatiom that downloads
         //the website and then puts the result in a label
         
+        //This example throws an exception.
         private async void Button_Click(object sender, RoutedEventArgs e) {
-            HttpClient client = new HttpClient();
+            //Intialize a new http client
+            var client = new HttpClient();
 
-            string content = await client
+            //client retrieves content
+            var content = await client
                 .GetStringAsync("http://www.microsoft.com")
-                //not execute on the UI thread because this is set to false
+                //not executed on the UI thread because this is set to false
                 .ConfigureAwait(false);
 
+            //This line is not executed on the UI thread because of the ConfigureAwait false, therefore
+            //throwing an exception
             Output.Content = content;
         }
 
         //These are just hear to remove errors not relevant to the example
-        private class RoutedEventArgs
+        public class RoutedEventArgs
         {
         }
 

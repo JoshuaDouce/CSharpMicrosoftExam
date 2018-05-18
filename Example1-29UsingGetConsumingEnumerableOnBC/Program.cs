@@ -7,23 +7,24 @@ using System.Threading.Tasks;
 
 namespace Example1_29UsingGetConsumingEnumerableOnBC
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
-            BlockingCollection<string> col = new BlockingCollection<string>();
+            var col = new BlockingCollection<string>();
 
-            Task read = Task.Run(() => {
-                foreach (string v in col.GetConsumingEnumerable())
+            var read = Task.Run(() => {
+                //Using the get consuming enumerable method you get an IEnumerable that blocks until it finds a new item
+                foreach (var v in col.GetConsumingEnumerable())
                 {
                     Console.WriteLine(v);
                 }
             });
 
-            Task write = Task.Run(() => {
+            var write = Task.Run(() => {
                 while (true)
                 {
-                    string s = Console.ReadLine();
+                    var s = Console.ReadLine();
                     if (string.IsNullOrWhiteSpace(s)) break;
                     col.Add(s);
                 }

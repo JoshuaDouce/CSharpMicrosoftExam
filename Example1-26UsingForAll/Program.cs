@@ -6,15 +6,17 @@ using System.Threading.Tasks;
 
 namespace Example1_26UsingForAll
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             var numbers = Enumerable.Range(0, 20);
 
             var parallelResult = numbers.AsParallel()
                 .Where(i => i % 2 == 0);
 
+            //ForAll iterates over the collection in a parallel way however removes any sort of ordering 
+            //precioously specified
             parallelResult.ForAll(e => Console.WriteLine(e));
         }
     }

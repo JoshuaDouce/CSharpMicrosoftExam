@@ -8,11 +8,15 @@ using System.Collections.Concurrent;
 
 namespace Example1_31EnumeratingConcurrentBag
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+
+        //Concurrent bag implement IEnumerable of T.
+        //This is made threadsafe by taking a snapshot of the collection when you begin iterating.
+        //Items added after iterating starts will not be visible
+        private static void Main(string[] args)
         {
-            ConcurrentBag<int> bag = new ConcurrentBag<int>();
+            var bag = new ConcurrentBag<int>();
 
             Task.Run(() => {
                 bag.Add(42);
