@@ -82,7 +82,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Examples", "Examples", "{B7
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercises", "Exercises", "{876E5979-46A3-4167-B609-B3F968881174}"
 	ProjectSection(SolutionItems) = preProject
-		Objective1-1Overview.docx = Objective1-1Overview.docx
+		Objective1.1Overview.txt = Objective1.1Overview.txt
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Objective1.2", "Objective1.2", "{B0158080-762E-4E4C-9706-3F982C33FE10}"

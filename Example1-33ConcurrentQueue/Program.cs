@@ -7,18 +7,22 @@ using System.Threading.Tasks;
 
 namespace Example1_33ConcurrentQueue
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        //A Queue is FIFO collection. (First in First Out)
+        private static void Main(string[] args)
         {
-            ConcurrentQueue<int> queue = new ConcurrentQueue<int>();
+            var queue = new ConcurrentQueue<int>();
+
+            //Enqueue adds an item to the queue
             queue.Enqueue(42);
+            queue.Enqueue(41);
+            queue.Enqueue(40);
 
-            int result;
-
-            if (queue.TryDequeue(out result))
+            //Dequeue removes an item from the front of the queue
+            if (queue.TryDequeue(out var result))
             {
-                Console.WriteLine("Dequeued {0}", result);
+                Console.WriteLine($"Dequeued {result}");
             }
         }
     }

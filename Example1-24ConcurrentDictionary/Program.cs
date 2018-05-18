@@ -7,9 +7,10 @@ using System.Threading.Tasks;
 
 namespace Example1_24ConcurrentDictionary
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        //A concurrent dictionary stores key vlue pairs in a thread safe manner
+        private static void Main(string[] args)
         {
             var dict = new ConcurrentDictionary<string, int>();
 
@@ -25,8 +26,11 @@ namespace Example1_24ConcurrentDictionary
 
             dict["k1"] = 42; //overrite unconditionally
 
-            int r1 = dict.AddOrUpdate("k1", 3, (s, i) => i * 2);
-            int r2 = dict.GetOrAdd("k2", 3);
+            var r1 = dict.AddOrUpdate("k1", 3, (s, i) => i * 2);
+            var r2 = dict.GetOrAdd("k2", 3);
         }
+
+        //Methods in a concurrent dictionary are atomic. This means an operation
+        //will be started and finished without ither threads interfering
     }
 }

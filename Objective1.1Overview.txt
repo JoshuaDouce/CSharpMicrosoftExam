@@ -1,0 +1,47 @@
+Thought Experiment
+
+1. Explain how multithreading can help with your client application?
+
+-Threading helps keep the UI responisve while long running operations are performed in the background.
+
+2. What is the difference between CPU and I/O bound operations
+
+-CPU bound operations take up a thread.
+-IO operations do not take up a thread.
+
+3.Does using multithreading with the TPL offer the same advantages for you server app?
+
+Usig multithreading in a server environment can help you distribute operations over multiple CPU's. 
+This way you can increase performance. 
+Using TPL to create another thread to execute CPU-Bound operation
+while the originating thread has to wait wont help with performance.
+
+Objective Summary
+
+-A thread can be virtualized in the CPU.
+-Using multiple threads can imporve responsiveness enables you to make use of multiple processors.
+-The thread class can be used if you want to create your own thread. However you should the TreadPool to 
+let the runtime manage your threads for you.
+-A task object encapsulates a job that needs to be executed. Tasks are the recommended why to create
+multithreaded code
+-The parallel class can be used to run code in parallel
+-PLINQ is an extension to LINQ to run queries in parallel
+-Aysnc and Await can be used to wirite asynchronous code more easily.
+-Concurrent collections can be used to dafely work with data in a multithreaded environment
+
+Objective Review
+
+1. You have a lot of items that need to be processed. For each item you need to perform a complex calculation.
+Which tenchnique should you use.
+
+B. Use a Paralell for loop to process al the items concurrently.
+
+2.You are creating a complex query that doesnt require any particular order and you want to run it in pararell.
+Which method do you use.
+
+A. AsParalell
+
+You are working on an ASP.NET app that retrieves some data from another web server then writes the response to the database.
+Should you use asnyc/await?
+
+C. Yes this will free your thread to server other request while waiting for the I/O operation to complete.

@@ -13,7 +13,7 @@ namespace Example1_24OrderedParalellQuery
         {
             var numbers = Enumerable.Range(0, 10);
             //adding the .AsOrdered to the LINQ statement ensure the result is returned in order
-            //Note to self: How does AdOrdered work on a list of custom objects
+            //AsOrdered preserves the ordering of the original list.
             var parallelResult = numbers.AsParallel().AsOrdered()
                 .Where(i => i % 2 == 0)
                 .ToArray();
