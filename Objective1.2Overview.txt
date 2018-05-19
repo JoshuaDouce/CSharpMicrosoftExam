@@ -4,7 +4,7 @@ Thought Experiment
 
 1.How can you orchestrate your code to avoid deadlocks?
 
-You can avoid deadlock by making sure that locjs are requested in the same order. That way the 
+You can avoid deadlock by making sure that locks are requested in the same order. That way the 
 first thread can finish its work, after which the seond thread can continue. -JD
 
 It's important to make sure that all locking follows the same order when locking multiple objects. As soon as
@@ -12,7 +12,7 @@ you start locking dependent objects in different orders, you start getting dead 
 
 2.How can the Interlocked class help?
 
-The interlocked class can hekp make operations atomic ensuring that when using multithreaded applications
+The interlocked class can hlkp make operations atomic ensuring that when using multithreaded applications
 increment/decrement or exhange values is done atomically. -JD
 
 The interlocked class can help you excute small, atomic operations without the need for locking. When you 
