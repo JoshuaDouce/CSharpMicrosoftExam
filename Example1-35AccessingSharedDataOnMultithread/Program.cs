@@ -13,6 +13,7 @@ namespace Example1_35AccessingSharedDataOnMultithread
         {
             int n = 0;
 
+            //Creates a new task that trys to increment the local variable
             var up = Task.Run(() =>
             {
                 for (int i = 0; i < 1000000; i++)
@@ -21,6 +22,8 @@ namespace Example1_35AccessingSharedDataOnMultithread
                 }
             });
 
+
+            //another task on a sperate thread trying to decrement the variable
             for (int i = 0; i < 1000000; i++)
             {
                 n--;
