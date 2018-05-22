@@ -1,0 +1,83 @@
+---
+Revision Notes from the exam @ https://www.exam-labs.com/exam/70-483
+---
+
+Question 1 - 1
+---
+- Marking an operation using a checked block it will gurantee that an overflow exception is thrown
+
+Questioon 2 - 1
+---
+Date Formats use string formatting
+	-{x:t} will give a 24hr date time representation of a time object e.g 20:07
+	-{x:hh:mm} will give you it in AM/PM format i.e 8:07pm
+
+Number formatting
+	-{x:Ny} where y indicates the degree of decimal precision eg {0:N2} would format 1.394 to 1.39
+
+Acroynms
+
+C - Culture
+N - Number
+d - day
+t - time
+h - hour
+m - minute
+P - %
+
+Syntax
+{index[,alignment][ :formatString] }
+
+Question 4 - 1
+---
+When opening a SQLConnection use sqlConnection.Open() to open the connection to the database
+To iterate over a collection of results use a sqlDataReader.Read();
+
+Question 5 - 1
+---
+-You can use to spiecify different resources for different build types;
+
+#if(DEBUG)
+	if debug use this 
+#else
+	if release use this
+#endif
+
+Question 6 - 1
+---
+
+//Strongly typed save method, where the type must inherit from animal, with a constructor that takes no parameters
+public static void Save<T>(T target) where T : Animale, new()
+
+Question 7 - 1
+---
+Debug.Assert only works in debug builds
+
+Question 8 - 1
+---
+XML Structure
+
+Root element ---> Element ---> Attr
+                     |
+					 |
+	    Element <---------> Element ----> Text
+
+An XML element is everything from (including) the element's start tag to (including) the element's end tag.
+An element can contain:
+	-text
+	-attributes
+	-other elements
+	-or a mix of the above
+
+XML Attributes must always be quoted
+
+<person gender="female"> //Attribute
+  <firstname>Anna</firstname>
+  <lastname>Smith</lastname>
+</person>
+
+<person>
+  <gender>female</gender>//Element
+  <firstname>Anna</firstname>
+  <lastname>Smith</lastname>
+</person>
