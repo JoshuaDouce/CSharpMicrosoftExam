@@ -1,4 +1,4 @@
----
+﻿---
 Revision Notes from the exam @ https://www.exam-labs.com/exam/70-483
 ---
 
@@ -81,3 +81,48 @@ XML Attributes must always be quoted
   <firstname>Anna</firstname>
   <lastname>Smith</lastname>
 </person>
+
+Question 9 - 1
+---
+A SortedList<TKey, TValue> represents a collection of key vallue pairs based on the associated IComparer<T> implementation
+
+Question 10 - 1
+---
+To throw an original stack trace just use  the throw keyword when throwing an exception
+
+Question 12 - 1
+---
+To convert a date time to UTC use the DateTime.TryParse Method (String, IFormatProvider, DateTimeStyles, DateTime)
+
+with the style 
+
+styles = DateTimeStyles.AdjustToUniversal | DateTimeStyles.AssumeLocal;
+
+Question 13 - 1
+---
+Trace static class updates the event log
+
+Question 14 - 1
+---
+Internal - only accesible from the same assembly bot not another assembly
+Protected - accessible from in the same or derived classed
+Private - only accesible in the same class or struct
+Protected internal - can be accessed by any code in the same assembly, or from within a derived class in another assembly
+Private protected - can be accesed only within its assembly, code in the same class or in a type that is derived from that class
+Public - accessible by any other code in the same assembly or another assembly taht refrences it
+
+Question 16-1
+---
+Adding a private lockObject to a class allows you to use the lock to ensure thread safety for opertions on objects of that type
+
+Question 17-1
+---
+GC.SuppressFinalize ensures that the garabage collector ddoes not relase an objects resource
+
+Question 19-1
+---
+To create a perfomance counter to anlyze the processing of objects follow these steps
+
+-Create a CounterCreationDataCollection. Then create the counters as CounterCreationData objects and set the properties
+-Add the counter creation data objects to the collection using the Add() method.
+-Call the Create() method of the PerformanceCounterCategory and pass the collection to the method
