@@ -126,3 +126,38 @@ To create a perfomance counter to anlyze the processing of objects follow these 
 -Create a CounterCreationDataCollection. Then create the counters as CounterCreationData objects and set the properties
 -Add the counter creation data objects to the collection using the Add() method.
 -Call the Create() method of the PerformanceCounterCategory and pass the collection to the method
+
+Question 21-1
+---
+
+//.OpenOrCreate ensure exception is not thrown if file does not exist
+//FileShare.ReadWrite allows subsequent opening of the file
+-var fs = File.Open(FileName, FileMode.OpenOrCreate, FileAccess.Read, FileShare.ReadWrite);
+
+Question 23-1
+---
+HMACSHA512 can be used ensure validity of data
+
+Question 24-1
+---
+the sealed keyword prevents a class from being inherited from
+
+Question 30-1
+---
+If you store a data type in an object you need to cast it back to its original data type before casting it to another eg
+
+var obj = float
+
+var int = (int)(float)obj;
+
+Question 31-1
+---
+Using the as operator return null instead of throwing an exception if a cinversion is not possible
+
+Question 32-1
+---
+When implenting IValidateable you must implement the following
+
+public IEnumerable<Validationresult> Validate(ValidationContext valCtxt){
+	do something here to validate 
+}
