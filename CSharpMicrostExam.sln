@@ -391,6 +391,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Question25-1", "Question25-
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsingJavascriptSerializer", "UsingJavascriptSerializer\UsingJavascriptSerializer.csproj", "{DA7B6A98-F084-4FD9-BC95-301EDB3BF0E3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreatingNotifications", "CreatingNotifications\CreatingNotifications.csproj", "{91D2E746-1A9C-4FEF-ADF4-87017E915A12}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -713,6 +715,10 @@ Global
 		{DA7B6A98-F084-4FD9-BC95-301EDB3BF0E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DA7B6A98-F084-4FD9-BC95-301EDB3BF0E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DA7B6A98-F084-4FD9-BC95-301EDB3BF0E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91D2E746-1A9C-4FEF-ADF4-87017E915A12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91D2E746-1A9C-4FEF-ADF4-87017E915A12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91D2E746-1A9C-4FEF-ADF4-87017E915A12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91D2E746-1A9C-4FEF-ADF4-87017E915A12}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -864,6 +870,7 @@ Global
 		{945227C6-743C-4CFC-8925-C7EB96D2A3C8} = {1E29E4CF-8069-496A-95A6-A77FEB318777}
 		{89B35DAB-C630-4EF5-B724-1E5D19C34B66} = {1E29E4CF-8069-496A-95A6-A77FEB318777}
 		{DA7B6A98-F084-4FD9-BC95-301EDB3BF0E3} = {1E29E4CF-8069-496A-95A6-A77FEB318777}
+		{91D2E746-1A9C-4FEF-ADF4-87017E915A12} = {1E29E4CF-8069-496A-95A6-A77FEB318777}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BC0DFAE5-B7DE-4802-8BBE-799B7849416C}

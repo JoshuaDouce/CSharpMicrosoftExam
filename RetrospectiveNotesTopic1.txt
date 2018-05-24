@@ -152,7 +152,7 @@ var int = (int)(float)obj;
 
 Question 31-1
 ---
-Using the as operator return null instead of throwing an exception if a cinversion is not possible
+Using the as operator return null instead of throwing an exception if a conversion is not possible
 
 Question 32-1
 ---
@@ -161,3 +161,28 @@ When implenting IValidateable you must implement the following
 public IEnumerable<Validationresult> Validate(ValidationContext valCtxt){
 	do something here to validate 
 }
+
+Question 50-1 Delegates
+---
+A delegate is a type that safely encapsulates a method then the method can be used liek a variable.
+
+Question 53-1
+---
+-A string concatenation operation always creates a new object from the existing string. A StringBuilder accomodates a buffer to append ew data if there is space.
+-Use the String class if you are concatenating a fixed number of String objects. In that case, the compiler may even combine individual concatenation operations into a single operation. 
+-Use a StringBuilder object if you are concatenating an arbitrary number of strings; for example, if you're using a loop to concatenate a random number of strings of user input. 
+
+Question 55-1
+---
+To install an assembly in to the global assembly cache you can use the following
+-The Global Assembly Cache tool(gacutil.exe)
+-Use the windows installer 2.0 
+
+Question 58-1
+---
+-The DataContractJsonSerializer class serializes objects to the JavaScript Object Notation (JSON) and deserializes JSON data to objects.
+-Use the DataContractJsonSerializer class to serialize instances of a type into a JSON document and to deserialize a JSON document into an instance of a type.
+
+Question 59-1
+---
+To specify an assemby is not fully signed include the AssemblyKeyFileAttribute and AssemblyDelaySignAttrubute
